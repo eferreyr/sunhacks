@@ -65,19 +65,23 @@ RestPref rf = new RestPref();
         if(view.getId() == R.id.vegCB)
         {
             rf.setVeg(true);
+            System.out.println(rf.getVeg());
         }
         if(view.getId() == R.id.veganCB)
         {
             rf.setVegan(true);
+            System.out.println(rf.getVegan());
         }
         if(view.getId() == R.id.gfCB)
         {
             rf.setGF(true);
+            System.out.println(rf.getGF());
         }
 
         if(view.getId() == R.id.japButton)
         {
             rf.setJap(true);
+            System.out.println(rf.getJap());
         }
         if(view.getId() == R.id.chinButton)
         {
