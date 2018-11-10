@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacesLiked">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Which places do you like?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textSize="30sp" />
+
+    <CheckBox
+        android:id="@+id/checkManzi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manzinita Dining Hall"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <CheckBox
+        android:id="@+id/checkPitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pitchforks"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <CheckBox
+        android:id="@+id/checkChick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chick-fil-a"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <CheckBox
+        android:id="@+id/checkSubway"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:text="Subway"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <CheckBox
+        android:id="@+id/checkTooker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tooker Dining Hall"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <CheckBox
+        android:id="@+id/checkAFS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AFS Sushi"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <CheckBox
+        android:id="@+id/checkQdoba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qdoba"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <CheckBox
+        android:id="@+id/checkPei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pei Wei"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <CheckBox
+        android:id="@+id/checkBagels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Einstein Bros Bagels"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <CheckBox
+        android:id="@+id/checkJamba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jamba Juice"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <CheckBox
+        android:id="@+id/checkDominos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dominos"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="454dp" />
+
+    <CheckBox
+        android:id="@+id/checkBurgerK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burger King"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <CheckBox
+        android:id="@+id/checkBarret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barret Dining Hall"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <CheckBox
+        android:id="@+id/checkHassa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hassayampa"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <CheckBox
+        android:id="@+id/checkGreens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devils' Greens"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <CheckBox
+        android:id="@+id/checkCrepe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Crepe Club"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <CheckBox
+        android:id="@+id/checkEngrained"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engrained"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+</android.support.constraint.ConstraintLayout>
