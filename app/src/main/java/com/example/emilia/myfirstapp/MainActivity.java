@@ -11,6 +11,8 @@ CheckBox vegCBox,veganCBox,gfCBox;
 Button japBtn, chinBtn, indBtn, medBtn, pizBtn, bgBtn, texmexBtn,
     chickBtn, burgBtn, cheapBtn, midBtn, expenBtn, nextBtn;
 TextView dietTView, favFoodTView, priceTView;
+RestPref rf = new RestPref();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,20 +64,20 @@ TextView dietTView, favFoodTView, priceTView;
     {
         if(view.getId() == R.id.vegCB)
         {
-
+            rf.setVeg(true);
         }
         if(view.getId() == R.id.veganCB)
         {
-
+            rf.setVegan(true);
         }
         if(view.getId() == R.id.gfCB)
         {
-
+            rf.setGF(true);
         }
 
         if(view.getId() == R.id.japButton)
         {
-
+            rf.setJap(true);
         }
         if(view.getId() == R.id.chinButton)
         {
@@ -124,6 +126,87 @@ TextView dietTView, favFoodTView, priceTView;
         if(view.getId() == R.id.nextButton)
         {
 
+        }
+    }
+
+    public class RestPref
+    {
+        boolean isVeg, isVegan, isGF, likesJap, likesChin, likesInd, likesMed, likesPiz,
+            likesBG, likesTexmex, likesChick, likesBurg, payCheap, payMid, payExpen;
+
+        public RestPref()
+        {
+            isVeg = false;
+            isVegan = false;
+            isGF = false;
+            likesJap = false;
+            likesChin = false;
+            likesInd = false;
+            likesMed = false;
+            likesPiz = false;
+            likesBG = false;
+            likesTexmex = false;
+            likesChick = false;
+            likesBurg = false;
+            payCheap = false;
+            payMid = false;
+            payExpen = false;
+        }
+        public RestPref(boolean iVg, boolean iVgn, boolean iGF, boolean lJ, boolean lChn,
+                        boolean lI, boolean lM, boolean lP, boolean lBG, boolean lTM,
+                        boolean lChk, boolean lB, boolean pC, boolean pM, boolean pE)
+        {
+            isVeg = iVg;
+            isVegan = iVgn;
+            isGF = iGF;
+            likesJap = lJ;
+            likesChin = lChn;
+            likesInd = lI;
+            likesMed = lM;
+            likesPiz = lP;
+            likesBG = lBG;
+            likesTexmex = lTM;
+            likesChick = lChk;
+            likesBurg = lB;
+            payCheap = pC;
+            payMid = pM;
+            payExpen = pE;
+        }
+
+        public void setVeg(boolean b)
+        {
+            isVeg = b;
+        }
+        public boolean getVeg()
+        {
+            return isVeg;
+        }
+
+        public void setVegan(boolean b)
+        {
+            isVeg = b;
+        }
+        public boolean getVegan()
+        {
+            return isVegan;
+        }
+
+        public void setGF(boolean b)
+        {
+            isGF = b;
+        }
+        public boolean getGF()
+        {
+            return isGF;
+        }
+
+        public void setJap(boolean b)
+        {
+            likesJap = b;
+        }
+        public boolean getJap()
+        {
+            return likesJap;
         }
     }
 }
