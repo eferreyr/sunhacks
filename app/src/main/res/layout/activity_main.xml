@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/dietTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -22,7 +22,7 @@
         tools:textSize="30sp" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/vegCB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -30,11 +30,11 @@
         android:layout_marginTop="8dp"
         android:text="Vegetarian"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/dietTV"
         tools:textSize="18sp" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/veganCB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -43,13 +43,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Vegan"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox3"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/gfCB"
+        app:layout_constraintStart_toEndOf="@+id/vegCB"
+        app:layout_constraintTop_toBottomOf="@+id/dietTV"
         tools:textSize="18sp" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/gfCB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -59,12 +59,12 @@
         android:layout_marginRight="8dp"
         android:text="Gluten Free"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBox2"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/veganCB"
+        app:layout_constraintTop_toBottomOf="@+id/dietTV"
         tools:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/favFoodTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -75,11 +75,11 @@
         android:text="Favorite Kinds of Food?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/veganCB"
         tools:textSize="30sp" />
 
     <Button
-        android:id="@+id/JapButton"
+        android:id="@+id/japButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -87,10 +87,10 @@
         android:layout_marginTop="8dp"
         android:text="Japanese"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/favFoodTV" />
 
     <Button
-        android:id="@+id/ChinButton"
+        android:id="@+id/chinButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -99,12 +99,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Chinese"
-        app:layout_constraintEnd_toStartOf="@+id/IndButton"
-        app:layout_constraintStart_toEndOf="@+id/JapButton"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintEnd_toStartOf="@+id/indButton"
+        app:layout_constraintStart_toEndOf="@+id/japButton"
+        app:layout_constraintTop_toBottomOf="@+id/favFoodTV" />
 
     <Button
-        android:id="@+id/IndButton"
+        android:id="@+id/indButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -112,10 +112,10 @@
         android:layout_marginRight="8dp"
         android:text="Indian"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/favFoodTV" />
 
     <Button
-        android:id="@+id/TexMexButton"
+        android:id="@+id/texmexButton"
         android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -123,10 +123,10 @@
         android:layout_marginTop="8dp"
         android:text="TexMex"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/JapButton" />
+        app:layout_constraintTop_toBottomOf="@+id/japButton" />
 
     <Button
-        android:id="@+id/MedButton"
+        android:id="@+id/medButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -135,12 +135,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Mediterranean"
-        app:layout_constraintEnd_toStartOf="@+id/BurgButton"
-        app:layout_constraintStart_toEndOf="@+id/TexMexButton"
-        app:layout_constraintTop_toBottomOf="@+id/ChinButton" />
+        app:layout_constraintEnd_toStartOf="@+id/burgButton"
+        app:layout_constraintStart_toEndOf="@+id/texmexButton"
+        app:layout_constraintTop_toBottomOf="@+id/chinButton" />
 
     <Button
-        android:id="@+id/BurgButton"
+        android:id="@+id/burgButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -148,10 +148,10 @@
         android:layout_marginRight="8dp"
         android:text="Burger"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IndButton" />
+        app:layout_constraintTop_toBottomOf="@+id/indButton" />
 
     <Button
-        android:id="@+id/ChickButton"
+        android:id="@+id/chickButton"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -159,10 +159,10 @@
         android:layout_marginTop="8dp"
         android:text="Chicken"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TexMexButton" />
+        app:layout_constraintTop_toBottomOf="@+id/texmexButton" />
 
     <Button
-        android:id="@+id/BGButton"
+        android:id="@+id/bgButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -171,12 +171,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Baked Goods"
-        app:layout_constraintEnd_toStartOf="@+id/PizButton"
-        app:layout_constraintStart_toEndOf="@+id/ChickButton"
-        app:layout_constraintTop_toBottomOf="@+id/MedButton" />
+        app:layout_constraintEnd_toStartOf="@+id/pizButton"
+        app:layout_constraintStart_toEndOf="@+id/chickButton"
+        app:layout_constraintTop_toBottomOf="@+id/medButton" />
 
     <Button
-        android:id="@+id/PizButton"
+        android:id="@+id/pizButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -184,10 +184,10 @@
         android:layout_marginRight="8dp"
         android:text="Pizza"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BurgButton" />
+        app:layout_constraintTop_toBottomOf="@+id/burgButton" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/priceTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -198,11 +198,11 @@
         android:text="Price Range?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BGButton"
+        app:layout_constraintTop_toBottomOf="@+id/bgButton"
         tools:textSize="30sp" />
 
     <Button
-        android:id="@+id/$Button"
+        android:id="@+id/cheapButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -210,10 +210,10 @@
         android:layout_marginTop="8dp"
         android:text="$"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/priceTV" />
 
     <Button
-        android:id="@+id/$$Button"
+        android:id="@+id/midButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -222,12 +222,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="$$"
-        app:layout_constraintEnd_toStartOf="@+id/$$$Button"
-        app:layout_constraintStart_toEndOf="@+id/$Button"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintEnd_toStartOf="@+id/expenButton"
+        app:layout_constraintStart_toEndOf="@+id/cheapButton"
+        app:layout_constraintTop_toBottomOf="@+id/priceTV" />
 
     <Button
-        android:id="@+id/$$$Button"
+        android:id="@+id/expenButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -235,10 +235,10 @@
         android:layout_marginRight="8dp"
         android:text="$$$"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/priceTV" />
 
     <Button
-        android:id="@+id/NextButton"
+        android:id="@+id/nextButton"
         android:layout_width="267dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -249,6 +249,6 @@
         android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/$$Button" />
+        app:layout_constraintTop_toBottomOf="@+id/midButton" />
 
 </android.support.constraint.ConstraintLayout>
