@@ -78,114 +78,6 @@
         app:layout_constraintTop_toBottomOf="@+id/veganCB"
         tools:textSize="30sp" />
 
-    <Button
-        android:id="@+id/japButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Japanese"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/favFoodTV" />
-
-    <Button
-        android:id="@+id/chinButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Chinese"
-        app:layout_constraintEnd_toStartOf="@+id/indButton"
-        app:layout_constraintStart_toEndOf="@+id/japButton"
-        app:layout_constraintTop_toBottomOf="@+id/favFoodTV" />
-
-    <Button
-        android:id="@+id/indButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Indian"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/favFoodTV" />
-
-    <Button
-        android:id="@+id/texmexButton"
-        android:layout_width="95dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:text="TexMex"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/japButton" />
-
-    <Button
-        android:id="@+id/medButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Mediterranean"
-        app:layout_constraintEnd_toStartOf="@+id/burgButton"
-        app:layout_constraintStart_toEndOf="@+id/texmexButton"
-        app:layout_constraintTop_toBottomOf="@+id/chinButton" />
-
-    <Button
-        android:id="@+id/burgButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Burger"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/indButton" />
-
-    <Button
-        android:id="@+id/chickButton"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Chicken"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/texmexButton" />
-
-    <Button
-        android:id="@+id/bgButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Baked Goods"
-        app:layout_constraintEnd_toStartOf="@+id/pizButton"
-        app:layout_constraintStart_toEndOf="@+id/chickButton"
-        app:layout_constraintTop_toBottomOf="@+id/medButton" />
-
-    <Button
-        android:id="@+id/pizButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Pizza"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/burgButton" />
-
     <TextView
         android:id="@+id/priceTV"
         android:layout_width="wrap_content"
@@ -198,22 +90,152 @@
         android:text="Price Range?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bgButton"
+        app:layout_constraintTop_toBottomOf="@+id/chickCB"
         tools:textSize="30sp" />
 
     <Button
-        android:id="@+id/cheapButton"
+        android:id="@+id/nextButton"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/japCB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:text="Japanese"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favFoodTV"
+        tools:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/indCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Indian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favFoodTV"
+        tools:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/chinCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Chinese"
+        app:layout_constraintEnd_toStartOf="@+id/indCB"
+        app:layout_constraintStart_toEndOf="@+id/japCB"
+        app:layout_constraintTop_toBottomOf="@+id/favFoodTV"
+        tools:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/medCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Mediterranean"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/japCB"
+        tools:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/bgCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Baked Goods"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indCB"
+        tools:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/pizCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Pizza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medCB"
+        tools:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/chickCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Chicken"
+        app:layout_constraintEnd_toStartOf="@+id/burgCB"
+        app:layout_constraintTop_toBottomOf="@+id/bgCB"
+        tools:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/burgCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Burger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bgCB"
+        tools:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/tmCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="TexMex"
+        app:layout_constraintEnd_toStartOf="@+id/chickCB"
+        app:layout_constraintStart_toEndOf="@+id/pizCB"
+        app:layout_constraintTop_toBottomOf="@+id/medCB"
+        tools:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cheapCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
         android:text="$"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/priceTV" />
+        app:layout_constraintTop_toBottomOf="@+id/priceTV"
+        tools:textSize="24sp" />
 
-    <Button
-        android:id="@+id/midButton"
+    <CheckBox
+        android:id="@+id/midCB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -222,33 +244,35 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="$$"
-        app:layout_constraintEnd_toStartOf="@+id/expenButton"
-        app:layout_constraintStart_toEndOf="@+id/cheapButton"
-        app:layout_constraintTop_toBottomOf="@+id/priceTV" />
+        app:layout_constraintEnd_toStartOf="@+id/expenCB"
+        app:layout_constraintStart_toEndOf="@+id/cheapCB"
+        app:layout_constraintTop_toBottomOf="@+id/priceTV"
+        tools:textSize="24sp" />
 
-    <Button
-        android:id="@+id/expenButton"
+    <CheckBox
+        android:id="@+id/expenCB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:text="$$$"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/priceTV" />
+        app:layout_constraintTop_toBottomOf="@+id/priceTV"
+        tools:textSize="24sp" />
 
-    <Button
-        android:id="@+id/nextButton"
-        android:layout_width="267dp"
+    <TextView
+        android:id="@+id/btnPressTxt"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/midButton" />
+        app:layout_constraintTop_toBottomOf="@+id/midCB"
+        tools:textSize="24sp" />
 
 </android.support.constraint.ConstraintLayout>
