@@ -198,5 +198,106 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         public boolean getJap() {
             return likesJap;
         }
+
+
+
+        public void setChin(boolean b)
+        {
+            likesChin = b;
+        }
+        public boolean getChin()
+        {
+            return likesChin;
+        }
+
+        public void setInd(boolean b)
+        {
+            likesJap = b;
+        }
+        public boolean getInd()
+        {
+            return likesInd;
+        }
+
+        public void setMed(boolean b)
+        {
+            likesMed = b;
+        }
+        public boolean getMed()
+        {
+            return likesMed;
+        }
+
+        public void setPiz(boolean b)
+        {
+            likesPiz = b;
+        }
+        public boolean getPiz()
+        {
+            return likesPiz;
+        }
+
+        public void setBG(boolean b)
+        {
+            likesBG = b;
+        }
+        public boolean getBG()
+        {
+            return likesBG;
+        }
+
+        public void setTexmex(boolean b)
+        {
+            likesTexmex = b;
+        }
+        public boolean getTexmex()
+        {
+            return likesTexmex;
+        }
+
+        public void setChick(boolean b)
+        {
+            likesChick = b;
+        }
+        public boolean getChick()
+        {
+            return likesChick;
+        }
+
+        public void setBurg(boolean b)
+        {
+            likesBurg = b;
+        }
+        public boolean getBurg()
+        {
+            return likesBurg;
+        }
+
+        public void setCheap(boolean b)
+        {
+            payCheap = b;
+        }
+        public boolean getCheap()
+        {
+            return payCheap;
+        }
+
+        public void setMid(boolean b)
+        {
+            payMid = b;
+        }
+        public boolean getMid()
+        {
+            return payMid;
+        }
+
+        public void setExpen(boolean b)
+        {
+            payExpen = b;
+        }
+        public boolean getExpen()
+        {
+            return payExpen;
+        }
     }
 }
