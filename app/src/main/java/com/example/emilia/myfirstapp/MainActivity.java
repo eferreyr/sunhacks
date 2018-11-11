@@ -80,52 +80,52 @@ RestPref rf = new RestPref();
             wasPressed.setText("Gluten Free Selected");
         }
 
-        if(view.getId() == R.id.japButton)
+        if(view.getId() == R.id.japCB)
         {
             rf.setJap(true);
             wasPressed.setText("Japanese Selected");
         }
-        if(view.getId() == R.id.chinButton)
+        if(view.getId() == R.id.chinCB)
         {
 
         }
-        if(view.getId() == R.id.indButton)
+        if(view.getId() == R.id.indCB)
         {
 
         }
-        if(view.getId() == R.id.medButton)
+        if(view.getId() == R.id.medCB)
         {
 
         }
-        if(view.getId() == R.id.pizButton)
+        if(view.getId() == R.id.pizCB)
         {
 
         }
-        if(view.getId() == R.id.bgButton)
+        if(view.getId() == R.id.bgCB)
         {
 
         }
-        if(view.getId() == R.id.texmexButton)
+        if(view.getId() == R.id.tmCB)
         {
 
         }
-        if(view.getId() == R.id.chickButton)
+        if(view.getId() == R.id.chickCB)
         {
 
         }
-        if(view.getId() == R.id.burgButton)
+        if(view.getId() == R.id.burgCB)
         {
 
         }
-        if(view.getId() == R.id.cheapButton)
+        if(view.getId() == R.id.cheapCB)
         {
 
         }
-        if(view.getId() == R.id.midButton)
+        if(view.getId() == R.id.midCB)
         {
 
         }
-        if(view.getId() == R.id.expenButton)
+        if(view.getId() == R.id.expenCB)
         {
 
         }
