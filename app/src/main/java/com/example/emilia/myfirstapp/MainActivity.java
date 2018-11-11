@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button nextBtn;
     TextView dietTView, favFoodTView, priceTView, wasPressed;
     RestPref rf = new RestPref();
+    Restaurant r [] = new Restaurant[27];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         favFoodTView = (TextView) findViewById(R.id.favFoodTV);
         priceTView = (TextView) findViewById(R.id.priceTV);
         wasPressed = (TextView) findViewById(R.id.btnPressTxt);
+
+        r[0] = new Restaurant("Barret", 1, 1, true,true,true,true,true,true,true,true,true,true,true,true);
+        r[1] = new Restaurant("Hassayampa", 1,1,true, true,true,true,true,true,true,true,true,true,true,true);
+        r[2] = new Restaurant("Manzanita",1,1, true,true,true,true,true,true,true,true,true,true,true,true);
+        r[3] = new Restaurant("Tooker", 1,1,true,true,true,true,true,true,true,true,true,true,true,true);
+        r[4] = new Restaurant("Pitchforks", 1,1,true,true,true,true,true,true,true,true,true,true,true,true);
+        r[5] = new Restaurant("Chick Fil A", 2,1,false,false,true,false,false,false,false,false,false,false,true,false);
+        r[6] = new Restaurant("AFC Sushi", 2,1,true,true,true,true,false,false,false,false,false,false,false,false);
+        r[7] = new Restaurant("Burger King",2,1,true,false,false,false,false,false,false,false,false,false,true,true );
+        r[8] = new Restaurant("Einstein Bagel Bros",2,1,true,true,false,false,false,false,false,false,true,false,false,false);
+        r[9] = new Restaurant("Pei Wei",2,2, true,true,true,true,true,false,false,false,false,false,true,false);
+        r[10] = new Restaurant("QDoba", 2,1,true, true,true,false,false,false,false,false,true,true,true,false);
+        r[11] = new Restaurant("Crepe Club", 2,2,true,false,false,false,false,false,false,false,true,false,false,false);
+        r[12] = new Restaurant("Devils Greens", 2,2,true,true,true,false,false,false,true,false,false,false,true,false);
+        r[13] = new Restaurant("Subway", 2,1,true,true,false,false,false,false,false,false,true,false,true,false);
+        r[14] = new Restaurant("Dominos", 2,1,true,false,true,false,false,false,false,true,true,false,true,false);
+        r[15] = new Restaurant("Engrained", 1,3,true,true,true,false,false,false,false,false,true,false,true,false);
+        r[16] = new Restaurant("Jamba Juice", 2,1,true,true,true,false,false,false,false,false,true,false,false,false);
+        r[17] = new Restaurant("Chick-In", 2,1,true,false,true,false,false,false,true,false,false,false,true,false);
+        r[18] = new Restaurant("Dog House",2,1,true,false,true,false,false,false,false,false,false,false,false,true);
+        r[19] = new Restaurant("Starbucks", 3,2,true,true,true,false,false,false,false,false,true,false,false,false);
+        r[20] = new Restaurant("Burning B Cafe",3,2,true,true,true,false,false,false,false,false,true,false,false,false);
+        r[21] = new Restaurant("Charlie's Cafe",3,2, true,true,true,false,false,false,false,false,true,false,false,false);
+        r[22] = new Restaurant("Freshii", 2,1,true,true,true,false,false,false,true,false,true,false,true,false);
+        r[23] = new Restaurant("Pod Market", 4,2,true,true,true,true,false,false,true,true,true,true,true,true);
+        r[24] = new Restaurant("Doner Dudes", 2,1,true,true,true,false,false,false,true,false,false,false,true,false);
+        r[25] = new Restaurant("Rosie's Bakery", 2,2,true,false,false,false,false,false,false,false,true,false,false,false);
+        r[26] = new Restaurant("Sonora Market", 4,1,true,true,true,true,false,false,true,true,true,true,true,true);
 
         vegCBox.setOnClickListener(this);
         veganCBox.setOnClickListener(this);
@@ -134,6 +163,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void OpenPlacesLiked() {
         Intent intent = new Intent(this, PlacesLiked.class);
         startActivity(intent);
+    }
+
+    public class Restaurant
+    {
+        String name;
+        int type,price;
+        boolean vegOp, veganOp, gfOp, japOp, chinOp, indOp, medOp, pizOp, bgOp, tmOp,
+            chickOp, burgOp, cheap, mid, expen;
+
+        public Restaurant(String n, int t, int pr, boolean vg, boolean vgn, boolean gf, boolean j,
+                          boolean chn, boolean i, boolean med, boolean p, boolean bg, boolean tm,
+                          boolean chk, boolean bgr)
+        {
+            name = n;
+            type = t;
+            price = pr;
+            vegOp = vg;
+            veganOp = vgn;
+            gfOp = gf;
+            japOp = j;
+            chinOp = chn;
+            indOp = i;
+            medOp = med;
+            pizOp = p;
+            bgOp = bg;
+            tmOp = tm;
+            chickOp = chk;
+            burgOp = bgr;
+            
+        }
     }
 
     public class RestPref {
