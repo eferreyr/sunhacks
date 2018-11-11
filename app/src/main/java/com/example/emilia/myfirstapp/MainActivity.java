@@ -8,9 +8,10 @@ import android.widget.Button;
 import android.widget.CheckBox;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 CheckBox vegCBox,veganCBox,gfCBox;
-Button japBtn, chinBtn, indBtn, medBtn, pizBtn, bgBtn, texmexBtn,
-    chickBtn, burgBtn, cheapBtn, midBtn, expenBtn, nextBtn;
-TextView dietTView, favFoodTView, priceTView;
+CheckBox japBtn, chinBtn, indBtn, medBtn, pizBtn, bgBtn, texmexBtn,
+    chickBtn, burgBtn, cheapBtn, midBtn, expenBtn;
+Button nextBtn;
+TextView dietTView, favFoodTView, priceTView, wasPressed;
 RestPref rf = new RestPref();
 
     @Override
@@ -22,23 +23,24 @@ RestPref rf = new RestPref();
         veganCBox = (CheckBox) findViewById(R.id.veganCB);
         gfCBox = (CheckBox) findViewById(R.id.gfCB);
 
-        japBtn = (Button) findViewById(R.id.japButton);
-        chinBtn = (Button) findViewById(R.id.chinButton);
-        indBtn = (Button) findViewById(R.id.indButton);
-        medBtn = (Button) findViewById(R.id.medButton);
-        pizBtn = (Button) findViewById(R.id.pizButton);
-        bgBtn = (Button) findViewById(R.id.bgButton);
-        texmexBtn = (Button) findViewById(R.id.texmexButton);
-        chickBtn = (Button) findViewById(R.id.chickButton);
-        burgBtn = (Button) findViewById(R.id.burgButton);
-        cheapBtn = (Button) findViewById(R.id.cheapButton);
-        midBtn = (Button) findViewById(R.id.midButton);
-        expenBtn = (Button) findViewById(R.id.expenButton);
+        japBtn = (CheckBox) findViewById(R.id.japCB);
+        chinBtn = (CheckBox) findViewById(R.id.chinCB);
+        indBtn = (CheckBox) findViewById(R.id.indCB);
+        medBtn = (CheckBox) findViewById(R.id.medCB);
+        pizBtn = (CheckBox) findViewById(R.id.pizCB);
+        bgBtn = (CheckBox) findViewById(R.id.bgCB);
+        texmexBtn = (CheckBox) findViewById(R.id.tmCB);
+        chickBtn = (CheckBox) findViewById(R.id.chickCB);
+        burgBtn = (CheckBox) findViewById(R.id.burgCB);
+        cheapBtn = (CheckBox) findViewById(R.id.cheapCB);
+        midBtn = (CheckBox) findViewById(R.id.midCB);
+        expenBtn = (CheckBox) findViewById(R.id.expenCB);
         nextBtn = (Button) findViewById(R.id.nextButton);
 
         dietTView = (TextView) findViewById(R.id.nextButton);
         favFoodTView = (TextView) findViewById(R.id.favFoodTV);
         priceTView = (TextView) findViewById(R.id.priceTV);
+        wasPressed = (TextView) findViewById(R.id.btnPressTxt);
 
         vegCBox.setOnClickListener(this);
         veganCBox.setOnClickListener(this);
@@ -65,23 +67,23 @@ RestPref rf = new RestPref();
         if(view.getId() == R.id.vegCB)
         {
             rf.setVeg(true);
-            System.out.println(rf.getVeg());
+            wasPressed.setText("Vegetarian Selected");
         }
         if(view.getId() == R.id.veganCB)
         {
             rf.setVegan(true);
-            System.out.println(rf.getVegan());
+            wasPressed.setText("Vegan Selected");
         }
         if(view.getId() == R.id.gfCB)
         {
             rf.setGF(true);
-            System.out.println(rf.getGF());
+            wasPressed.setText("Gluten Free Selected");
         }
 
         if(view.getId() == R.id.japButton)
         {
             rf.setJap(true);
-            System.out.println(rf.getJap());
+            wasPressed.setText("Japanese Selected");
         }
         if(view.getId() == R.id.chinButton)
         {
