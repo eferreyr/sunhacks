@@ -6,21 +6,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class Main3Activity extends AppCompatActivity {
-
 
     //creating a var for the listview to use it anywhere (more than once)
     ListView myListView;
     String[] items;
     String[] descriptions;
-    String[] prices;
+    FoodPlace BarrettDiningCenter = new FoodPlace();
 
-
-
-    @Override
+    //@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recommendations);
@@ -32,7 +28,7 @@ public class Main3Activity extends AppCompatActivity {
         //looking for an array in our resources
         items = res.getStringArray(R.array.items);
         descriptions = res.getStringArray(R.array.descriptions);
-        prices = res.getStringArray(R.array.prices);
+
 
         //merging these three arrays into a layout file!
 
@@ -41,7 +37,7 @@ public class Main3Activity extends AppCompatActivity {
 
   //      myListView.setAdapter(new ArrayAdapter<String>(this, R.layout.my_listview_detail, items));
 
-        ItemAdapter itemAdapter = new ItemAdapter(this, items, descriptions, prices); //references the item adapter
+        ItemAdapter itemAdapter = new ItemAdapter(this, items, descriptions); //references the item adapter
         //using the newly created item adapter:
         myListView.setAdapter(itemAdapter);
 
@@ -55,6 +51,5 @@ public class Main3Activity extends AppCompatActivity {
                 startActivity(showDetailActivity); //will switch the screen when we click the item
             }
         });
-
     }
 }

@@ -1,19 +1,42 @@
 <resources>
     <string name="app_name">MyFirstApp</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
 
     <string-array name="items">
-        <item>peach</item>
-        <item>tomato</item>
-        <item>squash</item>
+        <item>Barrett Dining Center</item>
+        <item>Hassayampa</item>
+        <item>Manzanita Dining</item>
+        <item>Pitchforks</item>
+        <!--<item>Tooker House Dining</item>-->
+        <!--<item>AFC</item>-->
+        <!--<item>Burger King</item>-->
+        <!--<item>Chick-fil-A</item>-->
+        <!--<item>Chick-In</item>-->
+        <!--<item>Devil\'s Greens</item>-->
+        <!--<item>DogHouse</item>-->
+        <!--<item>Domino\'s</item>-->
+        <!--<item>Einstein Bros Bagels</item>-->
+        <!--<item>engrained</item>-->
+        <!--<item>freshii</item>-->
+        <!--<item>Jamba Juice</item>-->
+        <!--<item>Qdoba</item>-->
+        <!--<item>Pei Wei</item>-->
+        <!--<item>Subway</item>-->
+        <!--<item>The Crepe Club</item>-->
+        <!--<item>Doner Dudes</item>-->
+        <!--<item>Rosie\'s at MU</item>-->
+        <!--<item>Burning B Cafe</item>-->
+        <!--<item>charlie\'s cafe</item>-->
+        <!--<item>Starbucks</item>-->
+        <!--<item>Sonora Market</item>-->
+        <!--<item>P.O.D. Market</item>-->
     </string-array>
-    <string-array name="prices">
-        <item>$0.99</item>
-        <item>$1.49</item>
-        <item>$0.89</item>
-    </string-array>
+
     <string-array name="descriptions">
-        <item>Fresh peaches from Georgia</item>
-        <item>Fresh salad tomatoes from Ohio</item>
-        <item>Fresh yellow squash from California</item>
+        <item>Dining Hall</item>
+        <item>Fast Casual Dining</item>
+        <item>Coffee</item>
+        <item>Markets</item>
     </string-array>
 </resources>

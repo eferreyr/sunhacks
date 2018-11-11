@@ -11,15 +11,12 @@ public class ItemAdapter extends BaseAdapter {
     LayoutInflater mInflater;
     String[] items;
     String[] descriptions;
-    String[] prices;
 
-    public ItemAdapter(Context context, String[] items, String[] descriptions, String[] prices){
+    public ItemAdapter(Context context, String[] items, String[] descriptions){
         this.items = items;
         this.descriptions = descriptions;
-        this.prices = prices;
         mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
-
 
     @Override
     public int getCount() { //counts how many items there are in the list
@@ -42,16 +39,15 @@ public class ItemAdapter extends BaseAdapter {
         //working with the three textview elements that will comprise a single list item
         TextView nameTextView = (TextView) v.findViewById(R.id.nameTextView);
         TextView descriptionTextView = (TextView) v.findViewById(R.id.descriptionTextView);
-        TextView priceTextView = (TextView) v.findViewById(R.id.priceTextView);
+
 
         //retrieving the info about each item
         String name = items[position];
         String descr = descriptions[position];
-        String cost = prices[position];
+
 
         nameTextView.setText(name);
         descriptionTextView.setText(descr);
-        priceTextView.setText(cost);
 
         return v; //returning the view we've created
     }
