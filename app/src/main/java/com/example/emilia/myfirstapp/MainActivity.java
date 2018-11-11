@@ -1,18 +1,20 @@
 package com.example.emilia.myfirstapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
 import android.widget.CheckBox;
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-CheckBox vegCBox,veganCBox,gfCBox;
-CheckBox japBtn, chinBtn, indBtn, medBtn, pizBtn, bgBtn, texmexBtn,
-    chickBtn, burgBtn, cheapBtn, midBtn, expenBtn;
-Button nextBtn;
-TextView dietTView, favFoodTView, priceTView, wasPressed;
-RestPref rf = new RestPref();
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    CheckBox vegCBox, veganCBox, gfCBox;
+    CheckBox japBtn, chinBtn, indBtn, medBtn, pizBtn, bgBtn, texmexBtn,
+            chickBtn, burgBtn, cheapBtn, midBtn, expenBtn;
+    Button nextBtn;
+    TextView dietTView, favFoodTView, priceTView, wasPressed;
+    RestPref rf = new RestPref();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,86 +64,72 @@ RestPref rf = new RestPref();
     }
 
     @Override
-    public void onClick(View view)
-    {
-        if(view.getId() == R.id.vegCB)
-        {
+    public void onClick(View view) {
+        if (view.getId() == R.id.vegCB) {
             rf.setVeg(true);
             wasPressed.setText("Vegetarian Selected");
         }
-        if(view.getId() == R.id.veganCB)
-        {
+        if (view.getId() == R.id.veganCB) {
             rf.setVegan(true);
             wasPressed.setText("Vegan Selected");
         }
-        if(view.getId() == R.id.gfCB)
-        {
+        if (view.getId() == R.id.gfCB) {
             rf.setGF(true);
             wasPressed.setText("Gluten Free Selected");
         }
 
-        if(view.getId() == R.id.japCB)
-        {
+        if (view.getId() == R.id.japCB) {
             rf.setJap(true);
             wasPressed.setText("Japanese Selected");
         }
-        if(view.getId() == R.id.chinCB)
-        {
+        if (view.getId() == R.id.chinCB) {
 
         }
-        if(view.getId() == R.id.indCB)
-        {
+        if (view.getId() == R.id.indCB) {
 
         }
-        if(view.getId() == R.id.medCB)
-        {
+        if (view.getId() == R.id.medCB) {
 
         }
-        if(view.getId() == R.id.pizCB)
-        {
+        if (view.getId() == R.id.pizCB) {
 
         }
-        if(view.getId() == R.id.bgCB)
-        {
+        if (view.getId() == R.id.bgCB) {
 
         }
-        if(view.getId() == R.id.tmCB)
-        {
+        if (view.getId() == R.id.tmCB) {
 
         }
-        if(view.getId() == R.id.chickCB)
-        {
+        if (view.getId() == R.id.chickCB) {
 
         }
-        if(view.getId() == R.id.burgCB)
-        {
+        if (view.getId() == R.id.burgCB) {
 
         }
-        if(view.getId() == R.id.cheapCB)
-        {
+        if (view.getId() == R.id.cheapCB) {
 
         }
-        if(view.getId() == R.id.midCB)
-        {
+        if (view.getId() == R.id.midCB) {
 
         }
-        if(view.getId() == R.id.expenCB)
-        {
+        if (view.getId() == R.id.expenCB) {
 
         }
-        if(view.getId() == R.id.nextButton)
-        {
-
+        if (view.getId() == R.id.nextButton) {
+            OpenPlacesLiked();
         }
     }
 
-    public class RestPref
-    {
-        boolean isVeg, isVegan, isGF, likesJap, likesChin, likesInd, likesMed, likesPiz,
-            likesBG, likesTexmex, likesChick, likesBurg, payCheap, payMid, payExpen;
+    public void OpenPlacesLiked() {
+        Intent intent = new Intent(this, PlacesLiked.class);
+        startActivity(intent);
+    }
 
-        public RestPref()
-        {
+    public class RestPref {
+        boolean isVeg, isVegan, isGF, likesJap, likesChin, likesInd, likesMed, likesPiz,
+                likesBG, likesTexmex, likesChick, likesBurg, payCheap, payMid, payExpen;
+
+        public RestPref() {
             isVeg = false;
             isVegan = false;
             isGF = false;
@@ -158,10 +146,10 @@ RestPref rf = new RestPref();
             payMid = false;
             payExpen = false;
         }
+
         public RestPref(boolean iVg, boolean iVgn, boolean iGF, boolean lJ, boolean lChn,
                         boolean lI, boolean lM, boolean lP, boolean lBG, boolean lTM,
-                        boolean lChk, boolean lB, boolean pC, boolean pM, boolean pE)
-        {
+                        boolean lChk, boolean lB, boolean pC, boolean pM, boolean pE) {
             isVeg = iVg;
             isVegan = iVgn;
             isGF = iGF;
@@ -179,39 +167,35 @@ RestPref rf = new RestPref();
             payExpen = pE;
         }
 
-        public void setVeg(boolean b)
-        {
+        public void setVeg(boolean b) {
             isVeg = b;
         }
-        public boolean getVeg()
-        {
+
+        public boolean getVeg() {
             return isVeg;
         }
 
-        public void setVegan(boolean b)
-        {
+        public void setVegan(boolean b) {
             isVeg = b;
         }
-        public boolean getVegan()
-        {
+
+        public boolean getVegan() {
             return isVegan;
         }
 
-        public void setGF(boolean b)
-        {
+        public void setGF(boolean b) {
             isGF = b;
         }
-        public boolean getGF()
-        {
+
+        public boolean getGF() {
             return isGF;
         }
 
-        public void setJap(boolean b)
-        {
+        public void setJap(boolean b) {
             likesJap = b;
         }
-        public boolean getJap()
-        {
+
+        public boolean getJap() {
             return likesJap;
         }
     }
