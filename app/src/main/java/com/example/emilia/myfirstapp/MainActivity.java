@@ -83,37 +83,48 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             wasPressed.setText("Japanese Selected");
         }
         if (view.getId() == R.id.chinCB) {
-
+            rf.setChin(true);
+            wasPressed.setText("Chinese Selected");
         }
         if (view.getId() == R.id.indCB) {
-
+            rf.setInd(true);
+            wasPressed.setText("Indian Selected");
         }
         if (view.getId() == R.id.medCB) {
-
+            rf.setMed(true);
+            wasPressed.setText("Mediterranean Selected");
         }
         if (view.getId() == R.id.pizCB) {
-
+            rf.setPiz(true);
+            wasPressed.setText("Pizza Selected");
         }
         if (view.getId() == R.id.bgCB) {
-
+            rf.setBG(true);
+            wasPressed.setText("Baked Goods Selected");
         }
         if (view.getId() == R.id.tmCB) {
-
+            rf.setTexmex(true);
+            wasPressed.setText("TexMex Selected");
         }
         if (view.getId() == R.id.chickCB) {
-
+            rf.setChick(true);
+            wasPressed.setText("Chicken Selected");
         }
         if (view.getId() == R.id.burgCB) {
-
+            rf.setBurg(true);
+            wasPressed.setText("Burger Selected");
         }
         if (view.getId() == R.id.cheapCB) {
-
+            rf.setCheap(true);
+            wasPressed.setText("Cheap Range Selected");
         }
         if (view.getId() == R.id.midCB) {
-
+            rf.setMid(true);
+            wasPressed.setText("Middle Range Selected");
         }
         if (view.getId() == R.id.expenCB) {
-
+            rf.setExpen(true);
+            wasPressed.setText("Expensive Range Selected");
         }
         if (view.getId() == R.id.nextButton) {
             OpenPlacesLiked();
