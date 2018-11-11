@@ -231,7 +231,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkChickin"
         android:layout_width="95dp"
         android:layout_height="34dp"
         android:layout_marginStart="8dp"
@@ -248,7 +248,7 @@
         android:layout_marginLeft="8dp"
         android:text="Starbucks"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="360dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkDominos" />
 
     <CheckBox
         android:id="@+id/checkFreshii"
@@ -258,27 +258,27 @@
         android:layout_marginLeft="8dp"
         android:text="Freshii"
         app:layout_constraintStart_toStartOf="@+id/divider"
-        tools:layout_editor_absoluteY="359dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkChickin" />
 
     <CheckBox
         android:id="@+id/checkPOD"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         android:text="P.O.D Market"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="392dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkStar" />
 
     <CheckBox
         android:id="@+id/checkBurning"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         android:text="Burning B Cafe"
         app:layout_constraintStart_toStartOf="@+id/divider"
-        tools:layout_editor_absoluteY="392dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkFreshii" />
 
     <CheckBox
         android:id="@+id/checkCharlies"
@@ -288,7 +288,7 @@
         android:layout_marginLeft="8dp"
         android:text="Charlie's Cafe"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="424dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkPOD" />
 
     <CheckBox
         android:id="@+id/checkSonara"
@@ -298,15 +298,17 @@
         android:layout_marginLeft="8dp"
         android:text="Sonara Market"
         app:layout_constraintStart_toStartOf="@+id/divider"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBurning" />
 
     <CheckBox
         android:id="@+id/checkDoner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:text="Doner Dudes"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="488dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkRosies" />
 
     <CheckBox
         android:id="@+id/checkDog"
@@ -316,16 +318,16 @@
         android:layout_marginLeft="8dp"
         android:text="Dog House"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="518dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkDoner" />
 
     <CheckBox
         android:id="@+id/checkRosies"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="28dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="Rosie's Bakery"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkCharlies" />
 
 </android.support.constraint.ConstraintLayout>
